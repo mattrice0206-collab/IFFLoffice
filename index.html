@@ -11,307 +11,17 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<style>
-
-*{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-
-}
-
-body{
-
-font-family:Arial, Helvetica, sans-serif;
-background:#eef2f7;
-color:#222;
-
-}
-
-header{
-
-background:#081a33;
-color:white;
-padding:18px 0;
-position:sticky;
-top:0;
-z-index:999;
-
-}
-
-.container{
-
-width:92%;
-max-width:1400px;
-margin:auto;
-
-}
-
-.navbar{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-}
-
-.logo{
-
-display:flex;
-align-items:center;
-gap:15px;
-
-}
-
-.logo img{
-
-height:70px;
-
-}
-
-.logo h1{
-
-font-size:26px;
-
-}
-
-.logo p{
-
-font-size:14px;
-opacity:.8;
-
-}
-
-nav ul{
-
-display:flex;
-list-style:none;
-gap:28px;
-
-}
-
-nav a{
-
-text-decoration:none;
-color:white;
-font-weight:bold;
-transition:.25s;
-
-}
-
-nav a:hover{
-
-color:#c8a24d;
-
-}
-
-/* =======================
-SLIDESHOW
-======================= */
-
-.hero{
-
-position:relative;
-width:100%;
-height:650px;
-overflow:hidden;
-background:black;
-
-}
-
-.slide{
-
-position:absolute;
-width:100%;
-height:100%;
-opacity:0;
-transition:opacity 1s ease-in-out;
-
-}
-
-.slide.active{
-
-opacity:1;
-
-}
-
-.slide img{
-
-width:100%;
-height:100%;
-object-fit:cover;
-
-}
-
-.overlay{
-
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:linear-gradient(
-rgba(0,0,0,.15),
-rgba(0,0,0,.45)
-);
-
-}
-
-.hero-text{
-
-position:absolute;
-bottom:50px;
-left:50%;
-transform:translateX(-50%);
-text-align:center;
-color:white;
-width:90%;
-z-index:5;
-
-}
-
-.hero-text h1{
-
-font-size:56px;
-letter-spacing:2px;
-margin-bottom:12px;
-
-text-shadow:2px 2px 10px black;
-
-}
-
-.hero-text p{
-
-font-size:22px;
-
-text-shadow:2px 2px 8px black;
-
-}
-
-.prev,
-.next{
-
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-
-background:rgba(0,0,0,.55);
-
-border:none;
-
-color:white;
-
-font-size:40px;
-
-padding:16px;
-
-cursor:pointer;
-
-z-index:6;
-
-transition:.25s;
-
-}
-
-.prev:hover,
-.next:hover{
-
-background:rgba(0,0,0,.8);
-
-}
-
-.prev{
-
-left:25px;
-
-}
-
-.next{
-
-right:25px;
-
-}
-
-.dots{
-
-position:absolute;
-
-bottom:18px;
-
-left:50%;
-
-transform:translateX(-50%);
-
-display:flex;
-
-gap:12px;
-
-z-index:6;
-
-}
-
-.dot{
-
-height:14px;
-
-width:14px;
-
-border-radius:50%;
-
-background:white;
-
-opacity:.4;
-
-cursor:pointer;
-
-transition:.25s;
-
-}
-
-.dot.active{
-
-opacity:1;
-
-background:#c8a24d;
-
-}
-
-.section{
-
-max-width:1200px;
-margin:70px auto;
-padding:0 20px;
-
-}
-
-.section h2{
-
-font-size:34px;
-
-margin-bottom:25px;
-
-color:#081a33;
-
-border-bottom:3px solid #c8a24d;
-
-padding-bottom:10px;
-
-}
-
-</style>
-
 </head>
 
 <body>
 
 <header>
 
-<div class="container navbar">
+<div class="container">
 
 <div class="logo">
 
-<img src="images/logo.png">
+<img src="images/logo.png" alt="IFFL Logo">
 
 <div>
 
@@ -327,7 +37,7 @@ padding-bottom:10px;
 
 <ul>
 
-<li><a href="index.html">Home</a></li>
+<li><a href="index.html" class="active">Home</a></li>
 
 <li><a href="constitution.html">Constitution</a></li>
 
@@ -335,9 +45,9 @@ padding-bottom:10px;
 
 <li><a href="draft-rules.html">Draft</a></li>
 
-<li><a href="forms.html">Forms</a></li>
-
 <li><a href="office.html">Office</a></li>
+
+<li><a href="forms.html">Official Forms</a></li>
 
 </ul>
 
@@ -347,53 +57,57 @@ padding-bottom:10px;
 
 </header>
 
+<!-- ===========================
+     HERO SLIDESHOW
+=========================== -->
+
 <section class="hero">
 
 <div class="slide active">
 
-<img src="images/teams/team1.png">
+<img src="images/teams/team1.png" alt="Team 1">
 
 </div>
 
 <div class="slide">
 
-<img src="images/teams/team2.png">
+<img src="images/teams/team2.png" alt="Team 2">
 
 </div>
 
 <div class="slide">
 
-<img src="images/teams/team3.png">
+<img src="images/teams/team3.png" alt="Team 3">
 
 </div>
 
 <div class="slide">
 
-<img src="images/teams/team4.png">
+<img src="images/teams/team4.png" alt="Team 4">
 
 </div>
 
 <div class="slide">
 
-<img src="images/teams/team5.png">
+<img src="images/teams/team5.png" alt="Team 5">
 
 </div>
 
 <div class="slide">
 
-<img src="images/teams/team6.png">
+<img src="images/teams/team6.png" alt="Team 6">
 
 </div>
 
 <div class="slide">
 
-<img src="images/teams/team7.png">
+<img src="images/teams/team7.png" alt="Team 7">
 
 </div>
 
 <div class="slide">
 
-<img src="images/teams/team8.png">
+<img src="images/teams/team8.png" alt="Team 8">
 
 </div>
 
@@ -425,152 +139,209 @@ padding-bottom:10px;
 
 </section>
 
-    
+    <!-- ===========================
+     WELCOME
+=========================== -->
+
 <section class="section">
 
 <h2>Welcome to the League</h2>
 
-<p style="font-size:18px; line-height:1.8;">
+<p>
 
 Welcome to the official website of the Israeli Fantasy Football League.
 
-This website serves as the official home of league operations, constitutional documents, trade records, league forms, and Commissioner announcements. Unless superseded by an official ruling, all information published here represents the official position of the Office of the Commissioner.
+This website serves as the official home of league governance, constitutional documents, league rules, draft procedures, official forms, and announcements issued by the Office of the Commissioner.
+
+Unless superseded by an official ruling, all information published on this website represents the official position of the Office of the Commissioner.
 
 </p>
 
 </section>
 
+<!-- ===========================
+     QUICK ACCESS
+=========================== -->
+
 <section class="section">
 
 <h2>Quick Access</h2>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;">
+<div class="card-grid">
 
-<a href="constitution.html" style="text-decoration:none;color:inherit;">
+<a href="constitution.html">
 
-<div style="background:white;padding:30px;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08);border-top:5px solid #c8a24d;">
+<div class="card">
 
-<h3>📜 Constitution</h3>
+<div class="icon">📜</div>
 
-<p>The governing document of the Israeli Fantasy Football League.</p>
+<h3>League Constitution</h3>
 
-</div>
+<p>
 
-</a>
+The governing document of the Israeli Fantasy Football League.
 
-<a href="rules.html" style="text-decoration:none;color:inherit;">
-
-<div style="background:white;padding:30px;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08);border-top:5px solid #c8a24d;">
-
-<h3>📖 League Rules</h3>
-
-<p>Quick reference guide for managers.</p>
+</p>
 
 </div>
 
 </a>
 
-<a href="draft-rules.html" style="text-decoration:none;color:inherit;">
+<a href="rules.html">
 
-<div style="background:white;padding:30px;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08);border-top:5px solid #c8a24d;">
+<div class="card">
 
-<h3>🏈 Draft Procedures</h3>
+<div class="icon">📖</div>
 
-<p>Official draft operations manual.</p>
+<h3>League Rules</h3>
 
-</div>
+<p>
 
-</a>
+Official scoring settings, roster requirements, waivers, trades and league procedures.
 
-<a href="forms.html" style="text-decoration:none;color:inherit;">
-
-<div style="background:white;padding:30px;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08);border-top:5px solid #c8a24d;">
-
-<h3>📝 Official Forms</h3>
-
-<p>Submit trade requests, appeals, complaints, and team information.</p>
+</p>
 
 </div>
 
 </a>
 
-<a href="office.html" style="text-decoration:none;color:inherit;">
+<a href="draft-rules.html">
 
-<div style="background:white;padding:30px;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08);border-top:5px solid #c8a24d;">
+<div class="card">
 
-<h3>🏛 Office of the Commissioner</h3>
+<div class="icon">🏈</div>
 
-<p>Official notices and league administration.</p>
+<h3>Draft Procedures</h3>
+
+<p>
+
+Official draft order, timing, keeper rules and draft-day operations.
+
+</p>
 
 </div>
-    
+
+</a>
+
+<a href="forms.html">
+
+<div class="card">
+
+<div class="icon">📝</div>
+
+<h3>Official Forms</h3>
+
+<p>
+
+Submit trade requests, appeals, complaints and team information.
+
+</p>
+
+</div>
+
+</a>
+
+<a href="office.html">
+
+<div class="card">
+
+<div class="icon">🏛️</div>
+
+<h3>Office of the Commissioner</h3>
+
+<p>
+
+Official notices, league administration and Commissioner resources.
+
+</p>
+
+</div>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     LEAGUE INFORMATION
+=========================== -->
+
 <section class="section">
 
 <h2>League Information</h2>
 
-<table style="width:100%;background:white;border-collapse:collapse;box-shadow:0 10px 25px rgba(0,0,0,.08);">
+<table>
 
 <tr>
 
-<td style="padding:18px;"><strong>Season</strong></td>
+<th>Category</th>
 
-<td style="padding:18px;">2026</td>
+<th>Information</th>
 
 </tr>
 
 <tr>
 
-<td style="padding:18px;"><strong>League Size</strong></td>
+<td>Season</td>
 
-<td style="padding:18px;">8 Teams</td>
-
-</tr>
-
-<tr>
-
-<td style="padding:18px;"><strong>Divisions</strong></td>
-
-<td style="padding:18px;">2</td>
+<td>2026</td>
 
 </tr>
 
 <tr>
 
-<td style="padding:18px;"><strong>Regular Season</strong></td>
+<td>League Size</td>
 
-<td style="padding:18px;">10 Games</td>
-
-</tr>
-
-<tr>
-
-<td style="padding:18px;"><strong>Playoff Teams</strong></td>
-
-<td style="padding:18px;">7</td>
+<td>8 Teams</td>
 
 </tr>
 
 <tr>
 
-<td style="padding:18px;"><strong>League Format</strong></td>
+<td>Divisions</td>
 
-<td style="padding:18px;">Full PPR</td>
-
-</tr>
-
-<tr>
-
-<td style="padding:18px;"><strong>FAAB Budget</strong></td>
-
-<td style="padding:18px;">$150</td>
+<td>2 Divisions</td>
 
 </tr>
 
 <tr>
 
-<td style="padding:18px;"><strong>Trade Deadline</strong></td>
+<td>Regular Season</td>
 
-<td style="padding:18px;">November 11, 2026</td>
+<td>10 Games</td>
+
+</tr>
+
+<tr>
+
+<td>Playoff Teams</td>
+
+<td>7 Teams</td>
+
+</tr>
+
+<tr>
+
+<td>League Format</td>
+
+<td>Full PPR</td>
+
+</tr>
+
+<tr>
+
+<td>FAAB Budget</td>
+
+<td>$150</td>
+
+</tr>
+
+<tr>
+
+<td>Trade Deadline</td>
+
+<td>To Be Announced</td>
 
 </tr>
 
@@ -578,53 +349,87 @@ This website serves as the official home of league operations, constitutional do
 
 </section>
 
+    <!-- ===========================
+     OFFICE NOTICE
+=========================== -->
+
 <section class="section">
 
 <h2>Latest Office Notice</h2>
 
-<div style="background:white;padding:35px;border-left:6px solid #c8a24d;box-shadow:0 10px 25px rgba(0,0,0,.08);">
+<div class="notice">
 
 <h3>OFFICE NOTICE 2026-001</h3>
 
-<p><strong>League Website Officially Established</strong></p>
+<p><strong>Official League Website Established</strong></p>
 
 <p>
 
-The Office of the Commissioner announces the launch of the official Israeli Fantasy Football League website. This website serves as the permanent repository for league documents, Commissioner rulings, official notices, forms, and league records.
+The Office of the Commissioner officially recognizes this website as the permanent home of the Israeli Fantasy Football League.
+
+All constitutional documents, official forms, league procedures, notices, and announcements published on this website shall be considered official league communications unless superseded by a later ruling.
 
 </p>
 
 </div>
 
 </section>
+
+<!-- ===========================
+     SEASON COUNTDOWN
+=========================== -->
 
 <section class="section">
 
 <h2>League Countdown</h2>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;">
+<div class="card-grid">
 
-<div style="background:white;padding:30px;text-align:center;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08);">
+<div class="card">
 
-<h3>🏈 Draft Day</h3>
+<div class="icon">🏈</div>
 
-<h1 id="draftCountdown">Coming Soon</h1>
+<h3>Season Kickoff</h3>
+
+<h1 id="kickoffCountdown">Loading...</h1>
+
+<p>
+
+September 9, 2026
+
+</p>
 
 </div>
 
-<div style="background:white;padding:30px;text-align:center;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08);">
+<div class="card">
 
-<h3>🏟 Opening Kickoff</h3>
+<div class="icon">📅</div>
 
-<h1 id="kickoffCountdown">Coming Soon</h1>
+<h3>Draft Day</h3>
+
+<h1>To Be Announced</h1>
+
+<p>
+
+The Commissioner will announce the official draft date.
+
+</p>
 
 </div>
 
-<div style="background:white;padding:30px;text-align:center;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08);">
+<div class="card">
 
-<h3>📅 Trade Deadline</h3>
+<div class="icon">🏆</div>
 
-<h1>November 11, 2026</h1>
+<h3>2026 Season</h3>
+
+<h1>Season I</h1>
+
+<p>
+
+Israeli Fantasy Football League
+
+</p>
 
 </div>
 
@@ -632,34 +437,41 @@ The Office of the Commissioner announces the launch of the official Israeli Fant
 
 </section>
 
-<section style="padding:80px 20px;text-align:center;">
+<!-- ===========================
+     COMMISSIONER QUOTE
+=========================== -->
 
-<h2 style="border:none;">
+<section class="quote">
+
+<p>
 
 "The Office protects the integrity of the league—not your fantasy team."
 
-</h2>
+</p>
 
-<p style="margin-top:20px;font-size:18px;color:#666;">
+<p>
 
-— Office of the Commissioner
+Office of the Commissioner
 
 </p>
 
 </section>
 
-    
-<footer style="background:#081a33;color:white;padding:50px 20px;margin-top:60px;">
+<!-- ===========================
+     FOOTER
+=========================== -->
+
+<footer>
 
 <div class="container">
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:35px;">
+<div class="card-grid">
 
 <div>
 
 <h3>Israeli Fantasy Football League</h3>
 
-<p style="margin-top:15px;line-height:1.7;">
+<p>
 
 Official Website of the Office of the Commissioner.
 
@@ -671,11 +483,11 @@ Official Website of the Office of the Commissioner.
 
 <h3>League</h3>
 
-<p><a href="constitution.html" style="color:white;text-decoration:none;">Constitution</a></p>
+<p><a href="constitution.html">Constitution</a></p>
 
-<p><a href="rules.html" style="color:white;text-decoration:none;">League Rules</a></p>
+<p><a href="rules.html">League Rules</a></p>
 
-<p><a href="draft-rules.html" style="color:white;text-decoration:none;">Draft Procedures</a></p>
+<p><a href="draft-rules.html">Draft Procedures</a></p>
 
 </div>
 
@@ -683,11 +495,9 @@ Official Website of the Office of the Commissioner.
 
 <h3>Office</h3>
 
-<p><a href="office.html" style="color:white;text-decoration:none;">Office of the Commissioner</a></p>
+<p><a href="office.html">Office of the Commissioner</a></p>
 
-<p><a href="office-notices.html" style="color:white;text-decoration:none;">Office Notices</a></p>
-
-<p><a href="forms.html" style="color:white;text-decoration:none;">Official Forms</a></p>
+<p><a href="forms.html">Official Forms</a></p>
 
 </div>
 
@@ -697,7 +507,7 @@ Official Website of the Office of the Commissioner.
 
 <p>Season: <strong>2026</strong></p>
 
-<p>League Status: <strong>Operational</strong></p>
+<p>Status: <strong>Operational</strong></p>
 
 <p>Constitution Version: <strong>1.0</strong></p>
 
@@ -705,9 +515,9 @@ Official Website of the Office of the Commissioner.
 
 </div>
 
-<hr style="margin:40px 0;border-color:rgba(255,255,255,.15);">
+<hr>
 
-<p style="text-align:center;opacity:.8;">
+<p class="text-center">
 
 © 2026 Israeli Fantasy Football League • Office of the Commissioner
 
@@ -717,12 +527,12 @@ Official Website of the Office of the Commissioner.
 
 </footer>
 
-<script>
+    <script>
 
-const slides=document.querySelectorAll(".slide");
-const dots=document.querySelectorAll(".dot");
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
 
-let currentSlide=0;
+let currentSlide = 0;
 
 function showSlide(index){
 
@@ -732,17 +542,17 @@ dots.forEach(dot=>dot.classList.remove("active"));
 slides[index].classList.add("active");
 dots[index].classList.add("active");
 
-currentSlide=index;
+currentSlide = index;
 
 }
 
 document.querySelector(".next").addEventListener("click",()=>{
 
-let next=currentSlide+1;
+let next = currentSlide + 1;
 
-if(next>=slides.length){
+if(next >= slides.length){
 
-next=0;
+next = 0;
 
 }
 
@@ -752,11 +562,11 @@ showSlide(next);
 
 document.querySelector(".prev").addEventListener("click",()=>{
 
-let prev=currentSlide-1;
+let prev = currentSlide - 1;
 
-if(prev<0){
+if(prev < 0){
 
-prev=slides.length-1;
+prev = slides.length - 1;
 
 }
 
@@ -776,11 +586,11 @@ showSlide(index);
 
 setInterval(()=>{
 
-let next=currentSlide+1;
+let next = currentSlide + 1;
 
-if(next>=slides.length){
+if(next >= slides.length){
 
-next=0;
+next = 0;
 
 }
 
@@ -788,39 +598,36 @@ showSlide(next);
 
 },6000);
 
-function countdown(elementId,targetDate){
+function kickoffCountdown(){
 
-const target=new Date(targetDate).getTime();
+const kickoff = new Date("September 9, 2026 20:20:00").getTime();
 
-const timer=setInterval(function(){
+const now = new Date().getTime();
 
-const now=new Date().getTime();
+const distance = kickoff - now;
 
-const distance=target-now;
+if(distance <= 0){
 
-if(distance<0){
-
-document.getElementById(elementId).innerHTML="LIVE";
-
-clearInterval(timer);
+document.getElementById("kickoffCountdown").innerHTML = "Season Started";
 
 return;
 
 }
 
-const days=Math.floor(distance/(1000*60*60*24));
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
-const hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
-document.getElementById(elementId).innerHTML=days+"d "+hours+"h";
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-},1000);
+document.getElementById("kickoffCountdown").innerHTML =
+days + "d " + hours + "h " + minutes + "m";
 
 }
 
-countdown("draftCountdown","August 29, 2026 18:00:00");
+kickoffCountdown();
 
-countdown("kickoffCountdown","September 10, 2026 19:20:00");
+setInterval(kickoffCountdown,60000);
 
 </script>
 
