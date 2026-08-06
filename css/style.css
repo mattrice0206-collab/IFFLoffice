@@ -1077,3 +1077,45 @@ padding:60px 20px;
 /* ==========================================
    END OF STYLESHEET
 ========================================== */
+
+.office-banner{
+
+background:#081a33;
+color:white;
+text-align:center;
+padding:60px 20px;
+
+}
+
+.office-seal{
+
+width:180px;
+max-width:80%;
+margin-bottom:25px;
+
+}
+
+.office-banner h1{
+
+font-size:46px;
+margin-bottom:10px;
+letter-spacing:2px;
+
+}
+
+.office-banner h3{
+
+font-size:22px;
+font-weight:400;
+color:#d6d6d6;
+margin-bottom:20px;
+
+}
+
+.office-motto{
+
+font-size:18px;
+font-style:italic;
+color:#c8a24d;
+
+}
