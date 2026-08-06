@@ -3,6 +3,19 @@
 
 <head>
 
+<style>
+
+header{
+
+    transition:transform .35s ease;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+</style>
+  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -479,6 +492,34 @@ Official Website of the Office of the Commissioner.
 
 </footer>
 
+<script>
+
+let lastScroll = 0;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", function () {
+
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll <= 0) {
+        header.style.transform = "translateY(0)";
+        return;
+    }
+
+    if (currentScroll > lastScroll) {
+        // Scrolling down
+        header.style.transform = "translateY(-100%)";
+    } else {
+        // Scrolling up
+        header.style.transform = "translateY(0)";
+    }
+
+    lastScroll = currentScroll;
+
+});
+
+</script>
+  
 </body>
 
 </html>
